@@ -1,0 +1,20 @@
+{
+  "name": "@b5156/pubsub",
+  "version": "0.1.0",
+  "description": "Just another compact library-agnostic Pub/Sub implementation.",
+  "main": "pubsubz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b5156/pubsubz.git"
+  },
+  "keywords": ["pubsub","emit"],
+  "author": "forked from addyosmani/pubsubz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b5156/pubsubz/issues"
+  },
+  "homepage": "https://github.com/b5156/pubsubz#readme"
+}
