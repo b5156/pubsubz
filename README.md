@@ -2,10 +2,10 @@ Just another compact library-agnostic Pub/Sub implementation.
 
 ### Usage
 
-`npm i @b5156/pubsub`
+`npm install psz`
 
 ```javascript
-	const pubsub = require('@b5156/pubsub');
+	const pubsub = require('psz');
 	
 	var testSubscriber = function( topics , data ){
 	    console.log( topics + ": " + data );

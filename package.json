@@ -1,5 +1,5 @@
 {
-  "name": "@b5156/pubsub",
+  "name": "psz",
   "version": "0.1.0",
   "description": "Just another compact library-agnostic Pub/Sub implementation.",
   "main": "pubsubz.js",
