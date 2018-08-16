@@ -2,6 +2,8 @@ Just another compact library-agnostic Pub/Sub implementation.
 
 ### Usage
 
+`npm i @b5156/pubsub`
+
 ```javascript
 	const pubsub = require('@b5156/pubsub');
 	
