@@ -12,14 +12,18 @@ pubsubz.publish = function(topic, args) {
       len = subscribers ? subscribers.length : 0;
 
     while (len--) {
-      subscribers[len].func(topic, args);
+      var temp = subscribers[len];
+      temp.func(topic, args);
+      if (temp.once) {
+        pubsubz.unsubscribe(temp.token);
+      }
     }
   }, 0);
 
   return true;
 };
 
-pubsubz.subscribe = function(topic, func) {
+pubsubz.subscribe = function(topic, func, once) {
   if (!topics[topic]) {
     topics[topic] = [];
   }
@@ -27,7 +31,8 @@ pubsubz.subscribe = function(topic, func) {
   var token = (++subUid).toString();
   topics[topic].push({
     token: token,
-    func: func
+    func: func,
+    once: !!once
   });
   return token;
 };
