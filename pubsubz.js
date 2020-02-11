@@ -1,3 +1,4 @@
+// https://github.com/b5156/pubsubz
 var topics = {},
   subUid = -1,
   pubsubz = {};
